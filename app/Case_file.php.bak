@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Case_file extends Model
+{
+    protected $table="case_files";
+
+    protected $fillable=['file_no','designated_file_no','status','police_station','created_date','resolved_date','file_created_date'];
+
+    protected $guarded=['created_at','updated_at'];
+}

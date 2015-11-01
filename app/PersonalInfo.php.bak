@@ -1,0 +1,20 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PersonalInfo extends Model
+{
+    protected $table="personal_infos";
+    protected $fillable=['person_id','NIC','file_no','passport_id','full_name','surname','date_of_birth','sex','religion','nationality','marital_status','current_address','telephone','current_mobile_no','title'];
+    protected $hidden=['driving_licence_id'];
+
+    public function getUserId($value,$column){
+
+        $success=PersonalInfo::where($column,'like',$value)->value('person_id');
+
+        return $success;
+
+    }
+}

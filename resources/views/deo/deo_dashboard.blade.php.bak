@@ -1,0 +1,31 @@
+@extends('deo.main_deo_panel')
+@section('content')
+<link type="text/css" rel="stylesheet" href="{{asset('css.style_dash.css')}}"
+    <div class="row">
+        <div class="container">
+            <div class="row" style="margin-top: 80px">
+                <div class="col-md-3 ">
+
+                     <a href="{{url('complainer/create')}}" class="thumbnail" style="background-color:#4C4C4C">
+                        <span>
+                        <img src="{{asset('images/file-icons/create-file-icon.png')}}" style="width: 250px" height="170px"/>
+                        <h4>Create Case File</h4>
+                        </span>
+                    </a>
+                </div> <!-- ./col-md-4 -->
+
+                <div class="col-md-3 col-md-offset-3 ">
+
+                      <a href="#" class="thumbnail" style="background-color:#4C4C4C">
+                        <span >
+                        <img src="{{asset('images/file-icons/open-file-icon.png')}}"  style="width: 250px" height="170px">
+                        <h4>View Case Files</h4>
+                         </span>
+                    </a>
+
+                </div> <!-- ./col-md-4 -->
+
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+    </div> <!-- ./row -->
+@endsection

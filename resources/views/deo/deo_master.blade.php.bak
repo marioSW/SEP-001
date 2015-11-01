@@ -1,0 +1,40 @@
+<html>
+<head>
+    <!--STYLESHEETS-->
+    <link type="text/css" rel="stylesheet" href="{{asset('./css/bootstrap.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('./css/bootstrap.min.css')}}" />
+
+    <!--FOR DATATABLE-->
+
+
+    <!--END DATA TABLE STYLESHEETS AND SCRIPTS -->
+
+    <script src="{{asset('./js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('./js/jquery-1.11.3.min.js')}}"></script>
+    <script src="{{asset('./js/bootstrap.js')}}"></script>
+
+</head>
+<body>
+<p>This is a Demo of whats to come</p>
+<a href="{{url('auth/logout')}}"> Log out here</a>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+
+            <!-- END PANEL HEADING -->
+            <div class="panel-body">
+                @yield('content')
+            </div>
+            <!--  END PANEL BODY -->
+        </div>
+        <!-- END PANEL -->
+    </div>
+    <!-- END ROW -->
+
+</div>
+<!-- END CONTAINER FLUID -->
+
+
+</body>
+
+</html>

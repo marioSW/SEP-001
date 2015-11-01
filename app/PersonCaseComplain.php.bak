@@ -1,0 +1,22 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
+class PersonCaseComplain extends Model
+{
+    protected $table='person_case_complains';
+
+    public function getComplainers($fileNo){
+
+        $complainer_list=DB::table('person_case_complains')->where('file_no',$fileNo)->lists('person_id');
+        if(array_filter($complainer_list)) {
+            return $complainer_list;
+        }
+        else{
+            return $complainer_list=array("no complainer added");
+        }
+    }
+}

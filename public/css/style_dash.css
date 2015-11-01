@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#topdiv {
+	  background: linear-gradient(#111, #222);
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	height:10%;
+	padding:10px;
+	
+}
+h1{
+	font-size:36px;
+	font-family: "MS Serif", "New York", serif;
+	color:#F00;
+
+
+}
+h2{
+	font-size:24px;
+	font-family: "MS Serif", "New York", serif;
+	color:#000;
+	
+	
+}
+
+div#bottomdiv {
+	  background: linear-gradient(#111, #222);
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	height:10%;
+	padding:20px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+.thumbnail>img, .thumbnail a>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  vertical-align: middle;
+}
+img {
+  border: 0;
+}
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a {
+  color: #7F7F7F;
+  text-decoration: none;
+}
+a {
+  background: 0 0;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-image:url(../images/bg2.jpg);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #404040;
+}
+.thumbnail .caption {
+  padding: 9px;
+  color: #333;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+user agent stylesheetdiv {
+  display: block;
+}
+
+Pseudo ::before element
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+Pseudo ::after element
+Pseudo ::after element
+ :before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div {
+  display: block;
+}
+
+.thumbnail:hover{
+	transform:scale(1.1);
+
+}
+
+.thumbnail {
+	transition:all 0.2s ease 0s;
+	width: 90%;
+	
+}
